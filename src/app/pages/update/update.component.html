@@ -1,0 +1,48 @@
+<h1>Update</h1>
+<hr />
+
+<form class="col-md-6 ms-4" (submit)="this.onSubmit()">
+
+    <div class="mb-3">
+        <label for="bname" class="form-label">Book Name</label>
+        <input type="text" class="form-control" id="bname" name="bname" [(ngModel)]="this.book.bname">
+    </div>
+    <div class="mb-3">
+        <label for="description" class="form-label">Description</label>
+        <input type="text" class="form-control" id="description" name="description" [(ngModel)]="this.book.description">
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">Price </label>
+        <input type="numeric" class="form-control" id="price" name="price" [(ngModel)]="this.book.price">
+    </div>
+    <div class="mb-3">
+        <label for="book_image" class="form-label">Book Image</label>
+        <input type="text" class="form-control" id="book_image" name="book_image" [(ngModel)]="this.book.book_image">
+    </div>
+    <div class="mb-3">
+        <label for="active" class="form-label">Active</label>
+        <input type="numeric" class="form-control" id="active" name="active" [(ngModel)]="this.book.active">
+    </div>
+    <div class="mb-3">
+        <label for="stockavailable" class="form-label">Stock</label>
+        <input type="numeric" class="form-control" id="stockavailable" name="stockavailable"
+            [(ngModel)]="this.book.stockavailable">
+    </div>
+    <div class="mb-3">
+        <label for="date_created" class="form-label">Created</label>
+        <input type="date" class="form-control" id="date_created" name="date_created"
+            [(ngModel)]="this.book.date_created">
+    </div>
+    <div class="mb-3">
+        <label for="last_updated" class="form-label">Updated</label>
+        <input name="last_updated" type="date" class="form-control" id="last_updated" name="last_updated" [(ngModel)]="this.book.last_updated">
+    </div>
+
+    <div class="mb-3">
+        <label for="bcategory_id" class="form-label">Category </label>
+        <input type="numeric" class="form-control" id="bcategory_id" name="bcategory_id" [(ngModel)]="this.book.bcategory_id">
+    </div>
+
+    <button class="btn btn-warning">Update</button>
+
+</form>
